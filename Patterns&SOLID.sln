@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structural", "Structural", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "State", "State", "{42062D4F-867D-4868-9C63-2E6E31F6E0B8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Factory", "Factory", "{63C10D50-BEF5-4262-A609-47E4095C52CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitnessClub", "FitnessClub\FitnessClub.csproj", "{AD2A456D-3E7B-46EA-A263-3EB27161B5AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,10 @@ Global
 		{E055B74A-A134-49A8-B2DC-42F0810306C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E055B74A-A134-49A8-B2DC-42F0810306C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E055B74A-A134-49A8-B2DC-42F0810306C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD2A456D-3E7B-46EA-A263-3EB27161B5AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD2A456D-3E7B-46EA-A263-3EB27161B5AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD2A456D-3E7B-46EA-A263-3EB27161B5AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD2A456D-3E7B-46EA-A263-3EB27161B5AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +38,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{E055B74A-A134-49A8-B2DC-42F0810306C3} = {42062D4F-867D-4868-9C63-2E6E31F6E0B8}
 		{42062D4F-867D-4868-9C63-2E6E31F6E0B8} = {36ADC3A8-C746-480E-878C-F096AA3C6443}
+		{63C10D50-BEF5-4262-A609-47E4095C52CC} = {88AABC8B-D40A-4928-A412-658D56AA72A4}
+		{AD2A456D-3E7B-46EA-A263-3EB27161B5AA} = {63C10D50-BEF5-4262-A609-47E4095C52CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3093677E-9F95-42EF-BA58-9D5E73C15831}
