@@ -1,11 +1,13 @@
-﻿class Program
+﻿using EventHandlerxExample;
+
+class Program
 {
     public static void Main()
     {
         ProcessBusinessLogic bl = new ProcessBusinessLogic();
         bl.ProcessCompleted += ProcessCompleted_1; // register with an event
         bl.ProcessCompleted += ProcessCompleted_2; // register with an event
-        bl.ProcessCompleted -= ProcessCompleted_1; // register with an event
+        bl.ProcessCompleted -= ProcessCompleted_1; // unsubscribe with an event
         bl.StartProcess();
     }
 
@@ -21,20 +23,3 @@
     }
 }
 
-public class ProcessBusinessLogic
-{
-    // declaring an event using built-in EventHandler
-    public event EventHandler ProcessCompleted;
-
-    public void StartProcess()
-    {
-        Console.WriteLine("Process Started!");
-        // some code here..
-        OnProcessCompleted(EventArgs.Empty); //No event data
-    }
-
-    protected virtual void OnProcessCompleted(EventArgs e)
-    {
-        ProcessCompleted?.Invoke(this, e);
-    }
-}

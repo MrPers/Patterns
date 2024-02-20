@@ -12,7 +12,6 @@ namespace ObserverExample.Contract
         void Attach(IObserver observer);
 
         // Detaches the observer from the publisher.
-
         void Detach(IObserver observer);
 
         // Notifies all observers about the event.
