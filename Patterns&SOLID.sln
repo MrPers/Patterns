@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Sing
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Singleton", "Singleton", "{A021FEC9-FE14-4289-931F-8719FB249A45}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cooker", "Cooker\Cooker.csproj", "{956F2879-87E6-4D1B-8C42-F482A26B319B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{9998EC0A-27A3-424F-83F3-98D68269C6A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9998EC0A-27A3-424F-83F3-98D68269C6A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9998EC0A-27A3-424F-83F3-98D68269C6A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{956F2879-87E6-4D1B-8C42-F482A26B319B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{956F2879-87E6-4D1B-8C42-F482A26B319B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{956F2879-87E6-4D1B-8C42-F482A26B319B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{956F2879-87E6-4D1B-8C42-F482A26B319B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,6 +103,7 @@ Global
 		{AD5327C6-FAD9-47D2-9EAB-CF10FACC940F} = {D02E193B-5906-4FBE-80D2-89F354557AE7}
 		{9998EC0A-27A3-424F-83F3-98D68269C6A2} = {A021FEC9-FE14-4289-931F-8719FB249A45}
 		{A021FEC9-FE14-4289-931F-8719FB249A45} = {88AABC8B-D40A-4928-A412-658D56AA72A4}
+		{956F2879-87E6-4D1B-8C42-F482A26B319B} = {AD5327C6-FAD9-47D2-9EAB-CF10FACC940F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3093677E-9F95-42EF-BA58-9D5E73C15831}
