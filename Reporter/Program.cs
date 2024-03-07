@@ -9,6 +9,8 @@ List<Employee> employees = new()
 
 var builder = new EmployeeReportBuilder(employees);
 
+
+
 var directorAll = new EmployeeReportDirectorAll(builder);
 
 directorAll.Build();
@@ -18,7 +20,7 @@ var report = builder.GetReport();
 Console.WriteLine(report + "\n\n\n");
 
 
-var directorOnlyBody = new EmployeeReportDirectorOnlyBody(builder);
+var directorOnlyBody = new EmployeeReportDirectorRandom(builder);
 
 directorOnlyBody.Build();
 

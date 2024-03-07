@@ -18,19 +18,37 @@
         }
     }
 
-    public class EmployeeReportDirectorOnlyBody
+    public class EmployeeReportDirectorRandom
     {
         private readonly IEmployeeReportBuilder _builder;
 
-        public EmployeeReportDirectorOnlyBody(IEmployeeReportBuilder builder)
+        public EmployeeReportDirectorRandom(IEmployeeReportBuilder builder)
         {
             _builder = builder;
         }
 
         public void Build()
         {
-            _builder
+            Random random = new Random();
+            switch (random.Next(3))
+            {
+                case 0:
+                    _builder
                 .BuildBody();
+                    break;
+                case 1:
+                    _builder
+                .BuildHeader()
+                .BuildBody();
+                    break;
+                case 2:
+                    _builder
+                .BuildBody()
+                .BuildFooter();
+                    break;
+            }
         }
+
+
     }
 }

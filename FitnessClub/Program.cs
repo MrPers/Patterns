@@ -26,7 +26,8 @@ class Program
             $"\tName:\t\t{membership.Name}\n" +
             $"\tDescription:\t{membership.Description}\n" +
             $"\tPrice:\t\t{membership.GetPrice()}\n" +
-            $"\tFactoryCLaseName:\t\t{factory.ToString().Split()[2]}");
+            $"\tFactoryCLaseName:\t\t{factory.ToString().Split('.')[2]}"
+            );
 
         Console.ReadLine();
     }
