@@ -19,7 +19,7 @@
             var singleton1 = FileWorkerSingleton.Instance;
             var singleton2 = FileWorkerSingleton.Instance;
 
-            // var singleton = new FileWorkerSingleton(); // You can't create a new instance of a singleton!
+             //var singleton = new FileWorkerSingleton(); // You can't create a new instance of a singleton!
 
             singleton1.WriteText("Hello, World!");
             singleton2.WriteText("Hi, Bro!");
