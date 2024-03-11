@@ -1,0 +1,4 @@
+﻿interface IDataReader
+{
+    void Read();
+}
