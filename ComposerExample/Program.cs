@@ -1,50 +1,35 @@
 ﻿namespace ComposerExample
 {
-    abstract class Item
-    {
-        protected string itemName;
-        protected string ownerName;
-        public void SetOwner(string ownerName) => this.ownerName = ownerName;
-        public Item(string name) => this.itemName = name;
-        public virtual void Add(Item item) { }
-        public virtual void Remove(Item item) { }
-        public abstract void Display();
-    }
-
-    class ClickableItem: Item
-    {
-        public ClickableItem(string name) : base(name) { }
-        public override void Add(Item item) { }
-        public override void Remove(Item item) { }
-        public override void Display()
-        {
-            Console.WriteLine(itemName);
-        }
-    }
-
-    class DropDownItem : Item
-    {
-        private List<Item> children;
-        public DropDownItem(string name) : base(name) 
-        {
-            children = new List<Item>();
-        }
-        public override void Add(Item item) 
-        {
-            sub
-        }
-        public override void Remove(Item item) { }
-        public override void Display()
-        {
-            Console.WriteLine(itemName);
-        }
-    }
-
     class Program
     {
         static void Main(string[] args)
         {
+            Item file = new DropDownItem("file->");
+            Item create = new DropDownItem("create->");
+            Item open = new DropDownItem("open->");
+            Item exit = new DropDownItem("output->");
 
+            file.Add(create);
+            file.Add(open);
+            file.Add(exit);
+
+            Item project = new ClickableItem("project..");
+            Item repository = new ClickableItem("repository..");
+
+            create.Add(project);
+            create.Add(repository);
+
+            Item solution = new ClickableItem("solutions..");
+            Item folder = new ClickableItem("folder..");
+
+            create.Add(solution);
+            create.Add(folder);
+
+            file.Display();
+            Console.WriteLine();
+
+            file.Remove(create);
+            file.Display();
         }
     }
 }
